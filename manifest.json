@@ -1,8 +1,8 @@
 {
   // Required
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Chromeo",
-  "version": "versionString",
+  "version": “1.0-beta”,
 
   // Recommended
   "default_locale": "en",
@@ -14,10 +14,10 @@
   // "page_action"
 
   // Optional
-  "author": "Joe Amato",
+  "author": [“Joe Amato”,”Eric Warrington”],
   // "automation"
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["background.js”],
     "persistent": false
   },
   "background_page": ...,
@@ -65,7 +65,7 @@
     "chrome_style": true,
     "page": "options.html"
   },
-  "permissions": ["tabs"],
+  "permissions": ["storage”, “tabs"],
   "platforms": ...,
   "plugins": [...],
   "requirements": {...},
