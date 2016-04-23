@@ -1,6 +1,6 @@
 {
   // Required
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Chromeo",
   "version": “1.0-beta”,
 
@@ -52,7 +52,7 @@
   "incognito": "spanning or split",
   "input_components": ...,
   "key": "publicKey",
-  "minimum_chrome_version": "versionString",
+  "minimum_chrome_version": “28”,
   "nacl_modules": [...],
   "oauth2": ...,
   "offline_enabled": true,
