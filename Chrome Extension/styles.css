@@ -1,0 +1,21 @@
+body
+{
+	color: white;
+}
+
+.center
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+	
+.background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('colors.jpeg');
+	filter: blur(10px);
+	z-index: -1;
+}

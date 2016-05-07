@@ -6,29 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=25">
 	<title>New Tab</title>
 	<!-- link rel="stylesheet" href="options.css" -->
-	<style>
-		.center
-		{
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-		}
-	
-		.background
-		{
-			position: absolute;
-			top: 0;
-			left: 0;
-			background: url('colors.jpeg');
-			filter: blur(10px);
-			z-index: -1;
-		}
-		
-		body
-		{
-			color: white;
-		}
-	</style>
 </head>
 
 <body id="body">
@@ -36,14 +13,18 @@
 <div class="center">
     <header id="header">
 		<h1>Feature Demo</h1>
-    </header>
+	</header>
 	
-	<input type="range" id="myRange" min="1" max="100" value="0" oninput="blurImage()">
-		
-	<p>Move slider to adjust blur</p>
-	<div>Pixels: <div id="value" style="display: inline">0</div> </div>
-		
-	<img id="bg" class="background" src="./colors.jpeg" style="filter: blur(0px); -webkit-filter: blur(0px)" height="100%" width="100%" />
+	<img id="bg" class="background" src="./colors2.jpg" style="filter: blur(0px); -webkit-filter: blur(0px)" height="100%" width="100%" />
+	
+	<img id="btn" onclick=""><img>
+	
+	<div id="settings">
+		<input type="range" id="myRange" min="1" max="100" value="0" oninput="blurImage()">
+	
+		<p>Move slider to adjust blur</p>
+		<div>Pixels: <div id="value" style="display: inline">0</div> </div>
+	</div>
 	
 </body>
 

@@ -5,3 +5,8 @@ function blurImage()
 	
 	document.getElementById("bg").setAttribute("style", "filter: blur(" + x + "px); -webkit-filter: blur(" + x + "px)");
 }
+
+function openSettings()
+{
+	
+}
