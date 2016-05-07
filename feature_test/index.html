@@ -23,6 +23,11 @@
 			filter: blur(10px);
 			z-index: -1;
 		}
+		
+		body
+		{
+			color: white;
+		}
 	</style>
 </head>
 
@@ -33,7 +38,7 @@
 		<h1>Feature Demo</h1>
     </header>
 	
-	<input type="range" id="myRange" min="1" max="50" value="0" oninput="blurImage()">
+	<input type="range" id="myRange" min="1" max="100" value="0" oninput="blurImage()">
 		
 	<p>Move slider to adjust blur</p>
 	<div>Pixels: <div id="value" style="display: inline">0</div> </div>

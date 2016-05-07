@@ -1,7 +1,7 @@
-//When Chrome extension is added, open new tab page to begin customizing
-
-chrome.browserAction.onClicked.addListener(function(activeTab)
+function blurImage()
 {
-    //var newURL = 
-    chrome.tabs.create({ url, '_blank' });
-});
+	var x = document.getElementById("myRange").value;
+	document.getElementById("value").innerHTML = x;
+	
+	document.getElementById("bg").setAttribute("style", "filter: blur(" + x + "px); -webkit-filter: blur(" + x + "px)");
+}
