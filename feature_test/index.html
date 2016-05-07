@@ -13,10 +13,20 @@
 			margin-right: auto;
 			text-align: center;
 		}
+	
+		.background
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: url('colors.jpeg');
+			filter: blur(10px);
+			z-index: -1;
+		}
 	</style>
 </head>
 
-<body id="body" style="background: -moz-filter(url(colors.jpeg), blur(10px));">
+<body id="body">
 <section id="Chromeo" class="center">
 <div class="center">
     <header id="header">
@@ -27,7 +37,7 @@
 		
 	<p id="demo">xx</p>
 		
-	<!--img id="bg" src="./Screen Shot.png" style="filter: blur(0px); -webkit-filter: blur(0px)" height="80%" width="80%" / -->
+	<img id="bg" class="background" src="./colors.jpeg" style="filter: blur(0px); -webkit-filter: blur(0px)" height="100%" width="100%" />
 	
 </body>
 
@@ -37,8 +47,8 @@
 		var x = document.getElementById("myRange").value;
 		document.getElementById("demo").innerHTML = x;
 		
-		//document.getElementById("bg").setAttribute("style", "filter: blur(" + x + "px); -webkit-filter: blur(" + x + "px)");
-		document.getElementById("body").setAttribute("style", "background: blur(" + x + "px);");
+		document.getElementById("bg").setAttribute("style", "filter: blur(" + x + "px); -webkit-filter: blur(" + x + "px)");
+		//document.getElementById("body").setAttribute("style", "background: blur(" + x + "px);");
 	}
 </script>
 
