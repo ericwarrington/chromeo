@@ -2,23 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=25">
-  <title>Chromeo Demo</title>
-  <!-- link rel="stylesheet" href="options.css" -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=25">
+	<title>Chromeo Demo</title>
+	<!-- link rel="stylesheet" href="options.css" -->
+	<style>
+		.center
+		{
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+	</style>
 </head>
 
-<body id="body">
-<section id="Chromeo">
+<body id="body" style="background: -moz-filter(url(colors.jpeg), blur(10px));">
+<section id="Chromeo" class="center">
+<div class="center">
     <header id="header">
-      <h1>Feature Demo</h1>
+		<h1>Feature Demo</h1>
     </header>
 	
 	<input type="range" id="myRange" min="1" max="30" value="5" onclick="myFunction()">
 		
 	<p id="demo">xx</p>
 		
-	<img id="bg" src="./Screen Shot.png" style="filter: blur(0px);" height="100%" width="100%" />
+	<!--img id="bg" src="./Screen Shot.png" style="filter: blur(0px); -webkit-filter: blur(0px)" height="80%" width="80%" / -->
 	
 </body>
 
@@ -28,7 +37,8 @@
 		var x = document.getElementById("myRange").value;
 		document.getElementById("demo").innerHTML = x;
 		
-		document.getElementById("bg").setAttribute("style", "filter: blur(" + x + "px);");
+		//document.getElementById("bg").setAttribute("style", "filter: blur(" + x + "px); -webkit-filter: blur(" + x + "px)");
+		document.getElementById("body").setAttribute("style", "background: blur(" + x + "px);");
 	}
 </script>
 
