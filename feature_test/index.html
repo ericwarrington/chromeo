@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=25">
-	<title>Chromeo Demo</title>
+	<title>New Tab</title>
 	<!-- link rel="stylesheet" href="options.css" -->
 	<style>
 		.center
@@ -35,7 +35,8 @@
 	
 	<input type="range" id="myRange" min="1" max="50" value="0" oninput="blurImage()">
 		
-	<p id="value">Adjust slider to change blur</p>
+	<p>Move slider to adjust blur</p>
+	<div>Pixels: <div id="value" style="display: inline">0</div> </div>
 		
 	<img id="bg" class="background" src="./colors.jpeg" style="filter: blur(0px); -webkit-filter: blur(0px)" height="100%" width="100%" />
 	
