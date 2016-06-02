@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=25">
-	<title>New Tab</title>
+	<title>Chromeo: Best Extension Ever!</title>
 	<link rel="stylesheet" href="settings.css"> 
 	<link rel="stylesheet" href="styles.css"> 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,32 +16,34 @@
 	
 	<img id="bg" class="background" src="./colors.jpeg" style="filter: blur(0px); -webkit-filter: blur(0px)" height="100%" width="100%" />
 	
-	<div id="button" class="material-icons" class="box">
+	<div>
 		
 <!-- 	<a class="button" href="#popup">Settings</a> </div> -->
 <!-- 	The line below is the imported icon that I can't figure out how to call in css-->
-		<i class="button" class="material-icons" href="#popup">settings</i> </div>
+		<a id="button" class="button material-icons box" href="#settings-popup">settings</a>
+	</div>
 </div>
-	
-	<div id="popup" class="overlay"> <div class="popup" class="material-icons"> 
+
+
+<div id="settings-popup" class="overlay">
+	 <div class="popup material-icons">
 		
-<!-- 	<a class="close" href="#">&times;</a> -->
+		<a class="close" href="#">&times;</a>
 <!-- 	The line below is also an imported icon. I probably won't use this. -->
-		<i class="close" href="#">done</i>
+<!--		<a class="close" href="#">done</a>	-->
 		
-		<header id="header">
-		<h3>Move slider to adjust blur</h3>
-		</header>
+		<!-- header id="header" -->
+		<h2>Move slider to adjust blur</h2>
+		<!-- /header -->
 		
-		<input type="range" id="blurRange" min="1" max="100" value="0" oninput="blurImage()">
+		<input type="range" id="blurRange" min="1" max="100" value="0" oninput="blurImage(bg, blurRange.value)">
 		
-		<div id="value" style="display: inline"></div>
 		
 <!-- 		I got rid of the displayed pixels to clean up UI. -->
 <!-- 		<div><br> Pixels: <div id="value" style="display: inline">0</div> </div> -->
-		
+
 	</div>
-	</div>
+</div>
 	
 </body>
 
