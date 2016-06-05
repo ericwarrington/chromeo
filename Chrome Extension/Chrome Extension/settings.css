@@ -1,7 +1,7 @@
 body, html
 {
   	font-family: Arial, sans-serif;
-  	overflow-x: hidden; 
+  	overflow-x: hidden;
     overflow-y: hidden;
 }
 
@@ -26,7 +26,7 @@ h2	/* h2 will be the size of h3 */
 
 a
 {
-	color: #4d4d4d !important;
+	color: #4d4d4d;
 }
 
 /* This is where I got stuck on. I couldn't figure out how to call the icons.  */
@@ -102,7 +102,8 @@ a
 
 .popup .close:hover 
 {
-  	color: #4d4d4d;
+	color: f00; //#4d4d4d;
+	text-shadow: 1px;
 }
 
 .popup .content 

@@ -40,7 +40,10 @@
 		
 		
 		<h2>Move slider to adjust opacity</h2>
-		<input type="range" id="opacityRange" min="1" max="200" value="100" oninput="setImageOpacity(bg, opacityRange.value)">
+		<input type="range" id="opacityRange" min="1" max="100" value="100" oninput="setImageOpacity(bg, opacityRange.value)">
+			
+		<h2>Move slider to adjust saturation</h2>
+		<input type="range" id="satRange" min="50" max="350" value="100" oninput="addImageFilter(bg, 'saturate', satRange.value + '%')">
 		
 <!-- 		I got rid of the displayed pixels to clean up UI. -->
 <!-- 		<div><br> Pixels: <div id="value" style="display: inline">0</div> </div> -->
